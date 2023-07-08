@@ -1,0 +1,174 @@
+/* Derek */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background-image: url(../images/Fondo1.png);
+    color: #edf2fa;
+}
+
+.container{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Nav */
+
+.hero{
+    width: 100%;
+    min-height: 100px;
+    max-height: 500px;
+    position: fixed;
+    display: grid;
+    z-index: 9999;
+}
+
+.nav{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #d7e3fc;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.logo__nav{
+    display: grid;
+    grid-auto-flow: column;
+    vertical-align: middle;
+    align-items: center;
+    
+}
+
+.logo__img{
+    width: 80px;
+}
+
+.title{
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #7ca3ff;
+}
+
+.buttons__nav{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    vertical-align: middle;
+}
+
+.btn__nav{
+    list-style: none;
+    text-align: center;
+    font-weight: 300;
+    padding: 20px;
+    background-color: #7ca3ff;
+    border-radius: 30px;
+}
+
+.btn{
+    color: #edf2fa;
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Main */
+
+.resume{
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.resume__title__text{
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.resume__title{
+    color: #7ca3ff;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.resume__about{
+    vertical-align: middle;
+}
+
+.resume__text{
+    color: #7ca3ff;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 80px;
+}
+
+.resume__slider {
+    padding-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.resume__slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+  
+.resume__slider img:first-child {
+    display: block;
+}
+
+/* Footer */
+
+.hero__down{
+    position: fixed;
+    display: grid;
+    grid-auto-flow: column;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Footer{
+    background-color: #d7e3fc;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.Networks_icons{
+    width: 50%;
+}
+.Social__networks{
+    width: 20%;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 20px;
+    margin: 0 auto;
+}
+.icons{
+    list-style: none;
+    margin: 0 auto;
+}
+.net__icon{
+    width: 50px;
+    vertical-align: middle;
+}
+
+
+
