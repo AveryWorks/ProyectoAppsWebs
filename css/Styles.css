@@ -28,6 +28,8 @@ body{
     position: fixed;
     display: grid;
     z-index: 9999;
+    top: 0px;
+    
 }
 
 .nav{
@@ -170,5 +172,188 @@ body{
     vertical-align: middle;
 }
 
+/*Create account*/
+.form-register {
+    width: 400px;
+    background: 7ca3ff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #7ca3ff;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #7ca3ff;
+  }
+  
+  .controls-form-register {
+    align-items: center;
+    width: 100%;
+    background: #edf2fa;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #7ca3ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #7ca3ff;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: #7ca3ff;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  
+  .form-register .botons-form-register {
+    width: 100%;
+    background: #7ca3ff;
+    border: none;
+    padding: 15px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
 
+  ::placeholder { color: #7ca3ff; }
 
+  /*Pay method*/
+.pay-method {
+    width: 400px;
+    background: 7ca3ff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #7ca3ff;
+  }
+  
+.pay-method h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #7ca3ff;
+  }
+  
+  .controls-pay-method {
+    align-items: center;
+    width: 100%;
+    background: #edf2fa;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #7ca3ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #7ca3ff;
+  }
+  
+  .pay-method p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .pay-method a {
+    color: #7ca3ff;
+    text-decoration: none;
+  }
+  
+  .pay-method a:hover {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  
+  .botons-pay-method {
+    width: 100%;
+    background: #7ca3ff;
+    border: none;
+    padding: 15px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  ::placeholder { color: #7ca3ff; }
+
+/*Delivery*/
+  .delivery {
+    width: 400px;
+    background: 7ca3ff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #7ca3ff;
+  }
+  
+  .delivery h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #7ca3ff;
+  }
+  
+  .controls-delivery {
+    align-items: center;
+    width: 100%;
+    background: #edf2fa;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #7ca3ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #7ca3ff;
+  }
+  
+  .delivery p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .delivery a {
+    color: #7ca3ff;
+    text-decoration: none;
+  }
+  
+  .delivery a:hover {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  
+  .botons-delivery {
+    width: 100%;
+    background: #7ca3ff;
+    border: none;
+    padding: 15px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  ::placeholder { color: #7ca3ff; }
