@@ -77,6 +77,10 @@ body{
     border-radius: 30px;
 }
 
+.btn__nav:hover{
+  background-color: rgb(76, 117, 212);
+}
+
 .btn{
     color: #edf2fa;
     font-size: large;
@@ -135,7 +139,71 @@ body{
     display: block;
 }
 
+/*Login*/
 
+.Login__Form {
+    width: 400px;
+    background: 7ca3ff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 250px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #7ca3ff;
+  }
+  .Login__Form h4{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #7ca3ff;
+  }
+
+  .controls-login {
+    align-items: center;
+    width: 98%;
+    background: #edf2fa;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #7ca3ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #7ca3ff;
+  }
+
+  .botons-login {
+    width: 100%;
+    background: #7ca3ff;
+    border: #7ca3ff;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+  }
+  .botons-login:hover{
+    background-color: rgb(76, 117, 212);
+  }
+
+
+.create__account{
+  margin-left: 15%;
+  display: inline-block;
+  font-size: 15px;
+}
+.create__account h1{
+  display: inline-block;
+  color: #7ca3ff;
+  font-size: 15px;
+  padding-right: 40px;
+}
+.go__register{
+  font-size: 15px;
+}
+.go__register:hover{
+    color:rgb(76, 117, 212);
+}
 
 /*Create account*/
 .form-register {
@@ -195,6 +263,10 @@ body{
     font-family: 'Poppins', sans-serif;
   }
 
+  .botons-form-register:hover{
+    background-color: rgb(76, 117, 212);
+  }
+
   ::placeholder { color: #7ca3ff; }
 
   /*Pay method*/
@@ -203,7 +275,7 @@ body{
     background: 7ca3ff;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 250px;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -256,6 +328,12 @@ body{
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
   }
+
+  .botons-pay-method:hover{
+    background-color: rgb(76, 117, 212);
+
+  }
+
 
   ::placeholder { color: #7ca3ff; }
 
