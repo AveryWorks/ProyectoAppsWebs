@@ -399,6 +399,42 @@ body{
 
   ::placeholder { color: #7ca3ff; }
 
+  /*Emily*/
+
+  .illustration {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    }
+
+    .form-backgroud {
+      width: 800px;
+      background: 7ca3ff;
+      padding: 30px;
+      margin: 0 auto;
+      margin-top: 150px;
+      border-radius: 4px;
+      color: whitesmoke;
+      box-shadow: 7px 13px 37px #7ca3ff;
+    }
+    .contact__pics {
+      padding-top: 20px;
+      margin: 0 auto;
+      width: 80%;
+      overflow: hidden;
+  }
+    
+  .contact__pics img {
+      width: 100%;
+      height: auto;
+      display: none;
+  }
+    
+  .contact__pics img:first-child {
+      display: block;
+  }
+
   /* Footer */
 
 .hero__down{
@@ -435,3 +471,4 @@ body{
   width: 50px;
   vertical-align: middle;
 }
+
