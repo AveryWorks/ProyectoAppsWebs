@@ -88,7 +88,7 @@ body{
 
 .resume{
     width: 100%;
-    padding-top: 250px;
+    padding-top: 150px;
     padding-bottom: 100px;
     display: grid;
     grid-auto-flow: column;
@@ -355,3 +355,23 @@ body{
   }
 
   ::placeholder { color: #7ca3ff; }
+
+  /*Emily*/
+
+  .illustration {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    }
+
+    .form-backgroud {
+      width: 800px;
+      background: 7ca3ff;
+      padding: 30px;
+      margin: auto;
+      margin-top: 275px;
+      border-radius: 4px;
+      color: white;
+      box-shadow: 7px 13px 37px #7ca3ff;
+    }
