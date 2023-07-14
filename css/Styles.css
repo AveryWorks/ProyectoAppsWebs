@@ -77,6 +77,10 @@ body{
     border-radius: 30px;
 }
 
+.btn__nav:hover{
+  background-color: rgb(76, 117, 212);
+}
+
 .btn{
     color: #edf2fa;
     font-size: large;
@@ -135,41 +139,70 @@ body{
     display: block;
 }
 
-/* Footer */
+/*Login*/
 
-.hero__down{
-    position: fixed;
-    display: grid;
-    grid-auto-flow: column;
-    bottom: 0;
-    left: 0;
+.Login__Form {
+    width: 400px;
+    background: 7ca3ff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 250px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #7ca3ff;
+  }
+  .Login__Form h4{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #7ca3ff;
+  }
+
+  .controls-login {
+    align-items: center;
+    width: 98%;
+    background: #edf2fa;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #7ca3ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #7ca3ff;
+  }
+
+  .botons-login {
     width: 100%;
-}
+    background: #7ca3ff;
+    border: #7ca3ff;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+  }
+  .botons-login:hover{
+    background-color: rgb(76, 117, 212);
+  }
 
-.Footer{
-    background-color: #d7e3fc;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+
+.create__account{
+  margin-left: 15%;
+  display: inline-block;
+  font-size: 15px;
 }
-.Networks_icons{
-    width: 50%;
+.create__account h1{
+  display: inline-block;
+  color: #7ca3ff;
+  font-size: 15px;
+  padding-right: 40px;
 }
-.Social__networks{
-    width: 20%;
-    display: grid;
-    grid-auto-flow: column;
-    padding: 20px;
-    margin: 0 auto;
+.go__register{
+  font-size: 15px;
 }
-.icons{
-    list-style: none;
-    margin: 0 auto;
-}
-.net__icon{
-    width: 50px;
-    vertical-align: middle;
+.go__register:hover{
+    color:rgb(76, 117, 212);
 }
 
 /*Create account*/
@@ -230,6 +263,10 @@ body{
     font-family: 'Poppins', sans-serif;
   }
 
+  .botons-form-register:hover{
+    background-color: rgb(76, 117, 212);
+  }
+
   ::placeholder { color: #7ca3ff; }
 
   /*Pay method*/
@@ -238,7 +275,7 @@ body{
     background: 7ca3ff;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 250px;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -292,6 +329,12 @@ body{
     font-family: 'Poppins', sans-serif;
   }
 
+  .botons-pay-method:hover{
+    background-color: rgb(76, 117, 212);
+
+  }
+
+
   ::placeholder { color: #7ca3ff; }
 
 /*Delivery*/
@@ -300,7 +343,7 @@ body{
     background: 7ca3ff;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 250px;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -372,7 +415,7 @@ body{
       margin: 0 auto;
       margin-top: 150px;
       border-radius: 4px;
-      color: white;
+      color: whitesmoke;
       box-shadow: 7px 13px 37px #7ca3ff;
     }
     .contact__pics {
@@ -391,3 +434,41 @@ body{
   .contact__pics img:first-child {
       display: block;
   }
+
+  /* Footer */
+
+.hero__down{
+  position: fixed;
+  display: grid;
+  grid-auto-flow: column;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.Footer{
+  background-color: #d7e3fc;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.Networks_icons{
+  width: 50%;
+}
+.Social__networks{
+  width: 20%;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 20px;
+  margin: 0 auto;
+}
+.icons{
+  list-style: none;
+  margin: 0 auto;
+}
+.net__icon{
+  width: 50px;
+  vertical-align: middle;
+}
+
