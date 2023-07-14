@@ -88,7 +88,7 @@ body{
 
 .resume{
     width: 100%;
-    padding-top: 150px;
+    padding-top: 250px;
     padding-bottom: 100px;
     display: grid;
     grid-auto-flow: column;
@@ -369,9 +369,25 @@ body{
       width: 800px;
       background: 7ca3ff;
       padding: 30px;
-      margin: auto;
-      margin-top: 275px;
+      margin: 0 auto;
+      margin-top: 150px;
       border-radius: 4px;
       color: white;
       box-shadow: 7px 13px 37px #7ca3ff;
     }
+    .contact__pics {
+      padding-top: 20px;
+      margin: 0 auto;
+      width: 80%;
+      overflow: hidden;
+  }
+    
+  .contact__pics img {
+      width: 100%;
+      height: auto;
+      display: none;
+  }
+    
+  .contact__pics img:first-child {
+      display: block;
+  }
