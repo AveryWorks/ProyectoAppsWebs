@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-Floristeria</title>
+    <title>Floristeria</title>
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="javascript/javascript.json"></script>
+    <script src="./javascript/javascript.js"></script>
 
 </head>
 <body>
@@ -41,18 +41,31 @@
 
         </nav>
     </header>
-    <section class="Login__Form">
-        <h4>Inicio de sesión</h4>
-        <input class="controls-login" type="email" name="email__login" id="Email" placeholder="Email">
-        <input class="controls-login" type="password" name="email__login" id="Contrasena" placeholder="Contraseña">
-        <input class="botons-login" type="submit" value="Login">
 
-        <div class="create__account">
-            <h1>No tiene cuenta?</h1>
-            <a href="register.html" class="go__register"> Crear cuenta</a>
+    <section class="MyInfo__Form">
+        <h4>Mi perfil</h4>
+        <div class="changes__account">
+                <p>Nombre del cliente:</p> <br>
+                <p>Dirección de entrega:</p> <br>
+                <p>Últimos 4 digitos de tarjeta asociada:</p> <br>
+                <p>Usuario:</p> <br>
         </div>
-
-      </section>
+        <div class="changes">
+            <h4>Actualizar datos</h4>
+            <ul class="changes__list">
+                <li class="ch__list">
+                    <a href="#" class="go__change"> Actualizar contraseña</a>
+                </li>
+                <li class="ch__list">
+                    <a href="#" class="go__change"> Actualizar método de pago</a>
+                </li>
+                <li class="ch__list">
+                    <a href="#" class="go__change">Actualizar dirección de entrega</a>
+                </li>
+            </ul>
+        </div>
+      
+    </section>
 
     <footer class="hero__down">
 

@@ -28,8 +28,6 @@ body{
     position: fixed;
     display: grid;
     z-index: 9999;
-    top: 0px;
-    
 }
 
 .nav{
@@ -77,10 +75,6 @@ body{
     border-radius: 30px;
 }
 
-.btn__nav:hover{
-  background-color: rgb(76, 117, 212);
-}
-
 .btn{
     color: #edf2fa;
     font-size: large;
@@ -92,10 +86,11 @@ body{
 
 .resume{
     width: 100%;
-    padding-top: 250px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: grid;
     grid-auto-flow: column;
+    padding: 100px;
 }
 
 .resume__title__text{
@@ -106,7 +101,7 @@ body{
 .resume__title{
     color: #7ca3ff;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .resume__about{
@@ -144,9 +139,8 @@ body{
 .Login__Form {
     width: 400px;
     background: 7ca3ff;
-    padding: 30px;
+    padding: 200px;
     margin: auto;
-    margin-top: 250px;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -157,6 +151,7 @@ body{
     font-size: 22px;
     margin-bottom: 20px;
     color: #7ca3ff;
+    
   }
 
   .controls-login {
@@ -185,8 +180,6 @@ body{
   .botons-login:hover{
     background-color: rgb(76, 117, 212);
   }
-
-
 .create__account{
   margin-left: 15%;
   display: inline-block;
@@ -209,9 +202,8 @@ body{
 .form-register {
     width: 400px;
     background: 7ca3ff;
-    padding: 30px;
+    padding: 200px;
     margin: auto;
-    margin-top: 275px;
     border-radius: 4px;
     color: white;
     box-shadow: 7px 13px 37px #7ca3ff;
@@ -273,9 +265,8 @@ body{
 .pay-method {
     width: 400px;
     background: 7ca3ff;
-    padding: 30px;
+    padding: 200px;
     margin: auto;
-    margin-top: 250px;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -334,16 +325,14 @@ body{
 
   }
 
-
   ::placeholder { color: #7ca3ff; }
 
 /*Delivery*/
   .delivery {
     width: 400px;
     background: 7ca3ff;
-    padding: 30px;
+    padding: 200px;
     margin: auto;
-    margin-top: 250px;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -413,7 +402,6 @@ body{
       background: 7ca3ff;
       padding: 30px;
       margin: 0 auto;
-      margin-top: 150px;
       border-radius: 4px;
       color: whitesmoke;
       box-shadow: 7px 13px 37px #7ca3ff;
@@ -435,40 +423,82 @@ body{
       display: block;
   }
 
+  /*MyInfo*/
+  .MyInfo__Form {
+    width: 1000px;
+    height: 600px;
+    background: 7ca3ff;
+    padding: 200px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: #7ca3ff;
+    box-shadow: 7px 13px 37px #7ca3ff;
+    text-align: left;
+  }
+  .MyInfo__Form h4{
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #7ca3ff;
+  }
+
+.changes__list{
+  margin-left: 15%;
+  display: inline-block;
+  font-size: 15px;
+}
+.changes h1{
+  display: inline-block;
+  color: #7ca3ff;
+  font-size: 15px;
+  padding-right: 40px;
+  text-align: left;
+}
+.go__change{
+  font-size: 15px;
+  text-align: left;
+}
+.go__change:hover{
+    color:rgb(76, 117, 212);
+    text-align: left;
+}
+
   /* Footer */
 
 .hero__down{
-  position: fixed;
+  
+  position:fixed;
   display: grid;
   grid-auto-flow: column;
   bottom: 0;
   left: 0;
   width: 100%;
+
 }
 
 .Footer{
-  background-color: #d7e3fc;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+    background-color: #d7e3fc;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .Networks_icons{
-  width: 50%;
+    width: 50%;
 }
 .Social__networks{
-  width: 20%;
-  display: grid;
-  grid-auto-flow: column;
-  padding: 20px;
-  margin: 0 auto;
+    width: 20%;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 20px;
+    margin: 0 auto;
 }
 .icons{
-  list-style: none;
-  margin: 0 auto;
+    list-style: none;
+    margin: 0 auto;
 }
 .net__icon{
-  width: 50px;
-  vertical-align: middle;
+    width: 50px;
+    vertical-align: middle;
 }
-
