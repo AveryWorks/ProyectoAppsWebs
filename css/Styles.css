@@ -141,15 +141,15 @@ body {
 /*Login*/
 
 .Login__Form {
-  display: flex;
-  flex-direction: column;
-  max-width: max-content;
-  align-items: center;
-  justify-content: center;
-  padding: 200px;
+  width: 400px;
+  background: 7ca3ff;
+  padding: 30px;
+  margin: auto;
+  margin-top: 250px;
   border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
   color: white;
-  box-shadow: 7px 3px 37px #7ca3ff;
+  box-shadow: 7px 13px 37px #7ca3ff;
 }
 .Login__Form h4 {
   text-align: center;
