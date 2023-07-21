@@ -171,7 +171,7 @@ body {
   color: #7ca3ff;
 }
 
-.botons-login {
+.Login__Form button {
   width: 100%;
   background: #7ca3ff;
   border: #7ca3ff;
@@ -181,7 +181,7 @@ body {
   margin: 16px 0;
   font-size: 18px;
 }
-.botons-login:hover {
+.Login__Form button:hover {
   background-color: rgb(76, 117, 212);
 }
 .create__account {
