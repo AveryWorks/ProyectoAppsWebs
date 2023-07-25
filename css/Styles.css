@@ -1,20 +1,19 @@
 /* Derek */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-:root {
-  --padding-container: 100px 0;
-}
-
 body {
+  display: flex;
   font-family: "Poppins", sans-serif;
   margin: 0 auto;
   background-image: url(../images/Fondo1.png);
   color: #edf2fa;
+  box-sizing: border-box;
 }
 
 .container {
   width: 100%;
   max-width: 80%;
+  padding: 0;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -23,11 +22,11 @@ body {
 
 .hero {
   width: 100%;
-  min-height: 100px;
-  max-height: 500px;
+  min-height: 90px;
+  max-height: 300px;
   position: fixed;
   display: grid;
-  z-index: 9999;
+  
 }
 
 .nav {
@@ -140,10 +139,11 @@ body {
 .Login__Form {
   width: 400px;
   background: 7ca3ff;
-  padding: 200px;
+  padding: 30px;
   margin: auto;
+  margin-top: 250px;
   border-radius: 4px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   box-shadow: 7px 13px 37px #7ca3ff;
 }
@@ -167,7 +167,7 @@ body {
   color: #7ca3ff;
 }
 
-.botons-login {
+.Login__Form button {
   width: 100%;
   background: #7ca3ff;
   border: #7ca3ff;
@@ -177,7 +177,7 @@ body {
   margin: 16px 0;
   font-size: 18px;
 }
-.botons-login:hover {
+.Login__Form button:hover {
   background-color: rgb(76, 117, 212);
 }
 .create__account {
