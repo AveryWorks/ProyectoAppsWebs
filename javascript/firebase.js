@@ -1,4 +1,3 @@
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
 import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
@@ -22,5 +21,7 @@ const app = initializeApp(firebaseConfig);
 const db= getFirestore();
 
 export const saveTask = (email, contrasena) =>
-    addDoc(collection(db, 'tasks', '1'),{email, contrasena});
+  addDoc(collection(db, 'tasks', '1'),{email, contrasena});
+
+export const GetTasks = () => console.log('tasks list')
 

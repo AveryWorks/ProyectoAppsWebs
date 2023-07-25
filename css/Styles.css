@@ -100,6 +100,7 @@ body {
 
 .resume__title__text {
   font-weight: 200;
+  font-size: 40px;
 }
 
 .resume__title {
@@ -121,21 +122,17 @@ body {
   padding-right: 80px;
 }
 
-.resume__slider {
+.home__pic {
   padding-top: 20px;
   vertical-align: middle;
   width: 100%;
   overflow: hidden;
 }
 
-.resume__slider img {
+.home__pic img {
   width: 100%;
   height: auto;
-  display: none;
-}
-
-.resume__slider img:first-child {
-  display: block;
+  border-radius: 30px;
 }
 
 /*Login*/
