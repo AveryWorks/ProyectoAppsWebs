@@ -26,7 +26,7 @@ body {
   max-height: 300px;
   position: fixed;
   display: grid;
-  
+  z-index: 9999;
 }
 
 .nav {
@@ -78,6 +78,10 @@ body {
   font-size: large;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.login__change{
+  display: block;
 }
 
 /* Main */
@@ -394,38 +398,25 @@ body {
 }
 
 /*Emily*/
-
-.illustration {
-  width: 600px;
-  height: 400px;
-  margin-bottom: 200px;
-  margin-left: 200px;
-}
-
 .form-backgroud {
-  width: 800px;
-  background: 7ca3ff;
+  margin-top: 200px;
+  margin-left: 225px;
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 90%;
   padding: 30px;
-  margin: 0 auto;
-  border-radius: 4px;
+  border-radius: 15px;
   color: whitesmoke;
   box-shadow: 7px 13px 37px #7ca3ff;
 }
-.contact__pics {
-  padding-top: 20px;
-  margin: 0 auto;
-  width: 80%;
-  overflow: hidden;
+.contact__main{
+  position: relative;
+  margin-top: 50px;
 }
 
 .contact__pics img {
   width: 100%;
-  height: auto;
-  display: none;
-}
-
-.contact__pics img:first-child {
-  display: block;
+  height: 400px;
 }
 
 /*MyInfo*/
