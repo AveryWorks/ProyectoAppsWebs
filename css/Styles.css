@@ -81,7 +81,7 @@ body {
 }
 
 .login__change{
-  display: block;
+  display: none;
 }
 
 /* Main */
