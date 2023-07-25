@@ -1,504 +1,511 @@
 /* Derek */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-:root{
-    --padding-container: 100px 0;
+
+
+
+
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-image: url(../images/Fondo1.png);
+  color: #edf2fa;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
-    background-image: url(../images/Fondo1.png);
-    color: #edf2fa;
-}
-
-.container{
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
+.container {
+  width: 100%;
+  max-width: 80%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 /* Nav */
 
-.hero{
-    width: 100%;
-    min-height: 100px;
-    max-height: 500px;
-    position: fixed;
-    display: grid;
-    z-index: 9999;
+.hero {
+  width: 100%;
+  min-height: 90px;
+  max-height: 300px;
+  position: fixed;
+  display: grid;
+  
 }
 
-.nav{
-    display: grid;
-    grid-auto-flow: column;
-    background-color: #d7e3fc;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #d7e3fc;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
-.logo__nav{
-    display: grid;
-    grid-auto-flow: column;
-    vertical-align: middle;
-    align-items: center;
-    
+.logo__nav {
+  display: grid;
+  grid-auto-flow: column;
+  vertical-align: middle;
+  align-items: center;
 }
 
-.logo__img{
-    width: 80px;
+.logo__img {
+  width: 80px;
 }
 
-.title{
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 300;
-    color: #7ca3ff;
+.title {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #7ca3ff;
 }
 
-.buttons__nav{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1em;
-    vertical-align: middle;
+.buttons__nav {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+  vertical-align: middle;
 }
 
-.btn__nav{
-    list-style: none;
-    text-align: center;
-    font-weight: 300;
-    padding: 20px;
-    background-color: #7ca3ff;
-    border-radius: 30px;
+.btn__nav {
+  list-style: none;
+  text-align: center;
+  font-weight: 300;
+  padding: 20px;
+  background-color: #7ca3ff;
+  border-radius: 30px;
 }
 
-.btn{
-    color: #edf2fa;
-    font-size: large;
-    text-transform: uppercase;
-    text-decoration: none;
+.btn {
+  color: #edf2fa;
+  font-size: large;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* Main */
 
-.resume{
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: grid;
-    grid-auto-flow: column;
-    padding: 100px;
+.resume {
+  position: absolute;
+  top: 40%;
+  width: max-content;
+  left: 10%;
+  height: 100%;
+  margin-top: -120px;
+  display: grid;
+  grid-auto-flow: column;
+  font-size: 90%;
 }
 
-.resume__title__text{
-    font-size: 40px;
-    font-weight: 200;
+.resume__title__text {
+  font-weight: 200;
 }
 
-.resume__title{
-    color: #7ca3ff;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.resume__title {
+  color: #7ca3ff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.resume__about{
-    vertical-align: middle;
+.resume__about {
+  vertical-align: middle;
 }
 
-.resume__text{
-    color: #7ca3ff;
-    font-size: 20px;
-    font-weight: 200;
-    text-align: justify;
-    padding-left: 70px;
-    padding-right: 80px;
+.resume__text {
+  color: #7ca3ff;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: justify;
+  padding-left: 70px;
+  padding-right: 80px;
 }
 
 .resume__slider {
-    padding-top: 20px;
-    vertical-align: middle;
-    width: 100%;
-    overflow: hidden;
+  padding-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+  overflow: hidden;
 }
-  
+
 .resume__slider img {
-    width: 100%;
-    height: auto;
-    display: none;
+  width: 100%;
+  height: auto;
+  display: none;
 }
-  
+
 .resume__slider img:first-child {
-    display: block;
+  display: block;
 }
 
 /*Login*/
 
 .Login__Form {
-    width: 400px;
-    background: 7ca3ff;
-    padding: 200px;
-    margin: auto;
-    border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    box-shadow: 7px 13px 37px #7ca3ff;
-  }
-  .Login__Form h4{
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #7ca3ff;
-    
-  }
+  width: 400px;
+  background: 7ca3ff;
+  padding: 30px;
+  margin: auto;
+  margin-top: 250px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #7ca3ff;
+}
+.Login__Form h4 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #7ca3ff;
+}
 
-  .controls-login {
-    align-items: center;
-    width: 98%;
-    background: #edf2fa;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    border: 1px solid #7ca3ff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #7ca3ff;
-  }
+.controls-login {
+  align-items: center;
+  width: 98%;
+  background: #edf2fa;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #7ca3ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #7ca3ff;
+}
 
-  .botons-login {
-    width: 100%;
-    background: #7ca3ff;
-    border: #7ca3ff;
-    border-radius: 5px;
-    padding: 15px;
-    color: white;
-    margin: 16px 0;
-    font-size: 18px;
-  }
-  .botons-login:hover{
-    background-color: rgb(76, 117, 212);
-  }
-.create__account{
+.Login__Form button {
+  width: 100%;
+  background: #7ca3ff;
+  border: #7ca3ff;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  margin: 16px 0;
+  font-size: 18px;
+}
+.Login__Form button:hover {
+  background-color: rgb(76, 117, 212);
+}
+.create__account {
   margin-left: 15%;
   display: inline-block;
   font-size: 15px;
 }
-.create__account h1{
+.create__account h1 {
   display: inline-block;
   color: #7ca3ff;
   font-size: 15px;
   padding-right: 40px;
 }
-.go__register{
+.go__register {
   font-size: 15px;
 }
-.go__register:hover{
-    color:rgb(76, 117, 212);
+.go__register:hover {
+  color: rgb(76, 117, 212);
 }
 
 /*Create account*/
 .form-register {
-    width: 400px;
-    background: 7ca3ff;
-    padding: 200px;
-    margin: auto;
-    border-radius: 4px;
-    color: white;
-    box-shadow: 7px 13px 37px #7ca3ff;
-  }
-  
-  .form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #7ca3ff;
-  }
-  
-  .controls-form-register {
-    align-items: center;
-    width: 100%;
-    background: #edf2fa;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    border: 1px solid #7ca3ff;
-    font-size: 18px;
-    color: #7ca3ff;
-  }
-  
-  .form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .form-register a {
-    color: #7ca3ff;
-    text-decoration: none;
-  }
-  
-  .form-register a:hover {
-    color: blueviolet;
-    text-decoration: none;
-  }
-  
-  .form-register .botons-form-register {
-    width: 100%;
-    background: #7ca3ff;
-    border: none;
-    padding: 15px;
-    color: white;
-    margin: 16px 0;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-  }
+  width: 400px;
+  background: 7ca3ff;
+  padding: 200px;
+  margin: auto;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px #7ca3ff;
+}
 
-  .botons-form-register:hover{
-    background-color: rgb(76, 117, 212);
-  }
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #7ca3ff;
+}
 
-  ::placeholder { color: #7ca3ff; }
+.controls-form-register {
+  align-items: center;
+  width: 100%;
+  background: #edf2fa;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #7ca3ff;
+  font-size: 18px;
+  color: #7ca3ff;
+}
 
-  /*Pay method*/
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: #7ca3ff;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.form-register .botons-form-register {
+  width: 100%;
+  background: #7ca3ff;
+  border: none;
+  padding: 15px;
+  color: white;
+  margin: 16px 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.botons-form-register:hover {
+  background-color: rgb(76, 117, 212);
+}
+
+::placeholder {
+  color: #7ca3ff;
+}
+
+/*Pay method*/
 .pay-method {
-    width: 400px;
-    background: 7ca3ff;
-    padding: 200px;
-    margin: auto;
-    border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    box-shadow: 7px 13px 37px #7ca3ff;
-  }
-  
+  width: 400px;
+  background: 7ca3ff;
+  padding: 200px;
+  margin: auto;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #7ca3ff;
+}
+
 .pay-method h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #7ca3ff;
-  }
-  
-  .controls-pay-method {
-    align-items: center;
-    width: 100%;
-    background: #edf2fa;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    border: 1px solid #7ca3ff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #7ca3ff;
-  }
-  
-  .pay-method p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .pay-method a {
-    color: #7ca3ff;
-    text-decoration: none;
-  }
-  
-  .pay-method a:hover {
-    color: blueviolet;
-    text-decoration: none;
-  }
-  
-  .botons-pay-method {
-    width: 100%;
-    background: #7ca3ff;
-    border: none;
-    padding: 15px;
-    color: white;
-    margin: 16px 0;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-  }
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #7ca3ff;
+}
 
-  .botons-pay-method:hover{
-    background-color: rgb(76, 117, 212);
+.controls-pay-method {
+  align-items: center;
+  width: 100%;
+  background: #edf2fa;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #7ca3ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #7ca3ff;
+}
 
-  }
+.pay-method p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
 
-  ::placeholder { color: #7ca3ff; }
+.pay-method a {
+  color: #7ca3ff;
+  text-decoration: none;
+}
+
+.pay-method a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.botons-pay-method {
+  width: 100%;
+  background: #7ca3ff;
+  border: none;
+  padding: 15px;
+  color: white;
+  margin: 16px 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.botons-pay-method:hover {
+  background-color: rgb(76, 117, 212);
+}
+
+::placeholder {
+  color: #7ca3ff;
+}
 
 /*Delivery*/
-  .delivery {
-    width: 400px;
-    background: 7ca3ff;
-    padding: 200px;
-    margin: auto;
-    border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    box-shadow: 7px 13px 37px #7ca3ff;
-  }
-  
-  .delivery h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #7ca3ff;
-  }
-  
-  .controls-delivery {
-    align-items: center;
-    width: 100%;
-    background: #edf2fa;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    border: 1px solid #7ca3ff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #7ca3ff;
-  }
-  
-  .delivery p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .delivery a {
-    color: #7ca3ff;
-    text-decoration: none;
-  }
-  
-  .delivery a:hover {
-    color: blueviolet;
-    text-decoration: none;
-  }
-  
-  .botons-delivery {
-    width: 100%;
-    background: #7ca3ff;
-    border: none;
-    padding: 15px;
-    color: white;
-    margin: 16px 0;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-  }
+.delivery {
+  width: 400px;
+  background: 7ca3ff;
+  padding: 200px;
+  margin: auto;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #7ca3ff;
+}
 
-  ::placeholder { color: #7ca3ff; }
+.delivery h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #7ca3ff;
+}
 
-  /*Emily*/
+.controls-delivery {
+  align-items: center;
+  width: 100%;
+  background: #edf2fa;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #7ca3ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #7ca3ff;
+}
 
-  .illustration {
-    width: 600px;
-    height: 400px;
-    margin-bottom: 200px;
-    margin-left: 200px;
-    }
+.delivery p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
 
-    .form-backgroud {
-      width: 800px;
-      background: 7ca3ff;
-      padding: 30px;
-      margin: 0 auto;
-      border-radius: 4px;
-      color: whitesmoke;
-      box-shadow: 7px 13px 37px #7ca3ff;
-    }
-    .contact__pics {
-      padding-top: 20px;
-      margin: 0 auto;
-      width: 80%;
-      overflow: hidden;
-  }
-    
-  .contact__pics img {
-      width: 100%;
-      height: auto;
-      display: none;
-  }
-    
-  .contact__pics img:first-child {
-      display: block;
-  }
+.delivery a {
+  color: #7ca3ff;
+  text-decoration: none;
+}
 
-  /*MyInfo*/
-  .MyInfo__Form {
-    width: 1000px;
-    height: 600px;
-    background: 7ca3ff;
-    padding: 200px;
-    margin: auto;
-    border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
-    color: #7ca3ff;
-    box-shadow: 7px 13px 37px #7ca3ff;
-    text-align: left;
-  }
-  .MyInfo__Form h4{
-    text-align: left;
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #7ca3ff;
-  }
+.delivery a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
 
-.changes__list{
+.botons-delivery {
+  width: 100%;
+  background: #7ca3ff;
+  border: none;
+  padding: 15px;
+  color: white;
+  margin: 16px 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+  color: #7ca3ff;
+}
+
+/*Emily*/
+
+.illustration {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 200px;
+  margin-left: 200px;
+}
+
+.form-backgroud {
+  width: 800px;
+  background: 7ca3ff;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 4px;
+  color: whitesmoke;
+  box-shadow: 7px 13px 37px #7ca3ff;
+}
+.contact__pics {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 80%;
+  overflow: hidden;
+}
+
+.contact__pics img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.contact__pics img:first-child {
+  display: block;
+}
+
+/*MyInfo*/
+.MyInfo__Form {
+  width: 1000px;
+  height: 600px;
+  background: 7ca3ff;
+  padding: 200px;
+  margin: auto;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  color: #7ca3ff;
+  box-shadow: 7px 13px 37px #7ca3ff;
+  text-align: left;
+}
+.MyInfo__Form h4 {
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #7ca3ff;
+}
+
+.changes__list {
   margin-left: 15%;
   display: inline-block;
   font-size: 15px;
 }
-.changes h1{
+.changes h1 {
   display: inline-block;
   color: #7ca3ff;
   font-size: 15px;
   padding-right: 40px;
   text-align: left;
 }
-.go__change{
+.go__change {
   font-size: 15px;
   text-align: left;
 }
-.go__change:hover{
-    color:rgb(76, 117, 212);
-    text-align: left;
+.go__change:hover {
+  color: rgb(76, 117, 212);
+  text-align: left;
 }
 
-  /* Footer */
+/* Footer */
 
-.hero__down{
-  
-  position:fixed;
+.hero__down {
+  position: fixed;
   display: grid;
   grid-auto-flow: column;
   bottom: 0;
   left: 0;
   width: 100%;
-
 }
 
-.Footer{
-    background-color: #d7e3fc;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+.Footer {
+  background-color: #d7e3fc;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
-.Networks_icons{
-    width: 50%;
+.Networks_icons {
+  width: 50%;
 }
-.Social__networks{
-    width: 20%;
-    display: grid;
-    grid-auto-flow: column;
-    padding: 20px;
-    margin: 0 auto;
+.Social__networks {
+  width: 20%;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 20px;
+  margin: 0 auto;
 }
-.icons{
-    list-style: none;
-    margin: 0 auto;
+.icons {
+  list-style: none;
+  margin: 0 auto;
 }
-.net__icon{
-    width: 50px;
-    vertical-align: middle;
+.net__icon {
+  width: 50px;
+  vertical-align: middle;
 }
