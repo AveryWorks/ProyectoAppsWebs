@@ -174,12 +174,12 @@ body {
 /*Login*/
 
 .Login__Form {
+  margin: auto;
+  margin-top: 15%;
   width: 400px;
   padding: 30px;
-  margin: auto;
-  margin-top: 250px;
+  display: grid;
   border-radius: 4px;
-  font-family: 'Poppins', sans-serif;
   color: white;
   box-shadow: 7px 13px 37px #7ca3ff;
 }
@@ -236,15 +236,18 @@ body {
 
 /*Create account*/
 .form-register {
-  width: 400px;
-  padding: 100px;
   margin: auto;
+  margin-top: 15%;
+  width: 400px;
+  padding: 30px;
+  display: grid;
   border-radius: 4px;
   color: white;
   box-shadow: 7px 13px 37px #7ca3ff;
 }
 
 .form-register h4 {
+  text-align: center;
   font-size: 22px;
   margin-bottom: 20px;
   color: #7ca3ff;
@@ -252,7 +255,7 @@ body {
 
 .controls-form-register {
   align-items: center;
-  width: 100%;
+  width: 98%;
   background: #edf2fa;
   padding: 5px;
   border-radius: 4px;
@@ -262,40 +265,19 @@ body {
   color: #7ca3ff;
 }
 
-.form-register p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-.form-register a {
-  color: #7ca3ff;
-  text-decoration: none;
-}
-
-.form-register a:hover {
-  color: blueviolet;
-  text-decoration: none;
-}
-
-.form-register .botons-form-register {
+.botons-form-register {
   width: 100%;
   background: #7ca3ff;
-  border: none;
+  border: #7ca3ff;
+  border-radius: 5px;
   padding: 15px;
   color: white;
   margin: 16px 0;
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
 }
 
 .botons-form-register:hover {
   background-color: rgb(76, 117, 212);
-}
-
-::placeholder {
-  color: #7ca3ff;
 }
 
 /*Pay method*/
