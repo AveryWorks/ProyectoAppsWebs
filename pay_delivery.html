@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floristeria</title>
+    <title>Delivery-Floristeria</title>
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -25,47 +25,41 @@
             <div class="buttons">
                 <ul class="buttons__nav">
                     <li class="btn__nav">
-                        <a href="store.html" class="btn">Tienda</a>
+                        <a href="#" class="btn">Tienda</a>
                     </li>
                     <li class="btn__nav">
-                        <a href="nosotros.html" class="btn">Nosotros</a>
+                        <a href="#" class="btn">Nosotros</a>
                     </li>
                     <li class="btn__nav">
-                        <a href="contact.html" class="btn">Contacto</a>
+                        <a href="#" class="btn">Contacto</a>
                     </li>
-                    <li class="btn__nav login__change">
-                        <a href="login.html" class="btn">Login</a>
-                    </li>
+                    
                 </ul>
             </div>
 
         </nav>
     </header>
+    <section class="delivery">
+        <h4>Dirección de entrega</h4>
+        <input class="controls-delivery" type="text" name="direccion-delivery" id="correo" placeholder="Dirección exacta">
 
-    <section class="MyInfo__Form">
-        <h4>Mi perfil</h4>
-        <div class="changes__account">
-                <p>Nombre del cliente:</p> <br>
-                <p>Dirección de entrega:</p> <br>
-                <p>Últimos 4 digitos de tarjeta asociada:</p> <br>
-                <p>Usuario:</p> <br>
-        </div>
-        <div class="changes">
-            <h4>Actualizar datos</h4>
-            <ul class="changes__list">
-                <li class="ch__list">
-                    <a href="changepass.html" class="go__change"> Actualizar contraseña</a>
-                </li>
-                <li class="ch__list">
-                    <a href="paymethod.html" class="go__change"> Actualizar método de pago</a>
-                </li>
-                <li class="ch__list">
-                    <a href="delivery.html" class="go__change">Actualizar dirección de entrega</a>
-                </li>
-            </ul>
-        </div>
-      
-    </section>
+        <h4>Método de pago</h4>
+        <label class="controls-delivery">
+            <input type="radio" name="opcion" value="opcion1">   Sinpe   
+        </label>
+        <br><br>
+        <label class="controls-delivery">
+            <input type="radio" name="opcion" value="opcion2"> Tarjeta 
+        </label>
+        <br><br>
+        <label class="controls-delivery">
+            <input type="radio" name="opcion" value="opcion3"> Efectivo
+        </label>
+        <br>
+        <br>
+        <input class="botons-delivery" type="submit" value="Realizar pedido">
+
+      </section>
 
     <footer class="hero__down">
 
