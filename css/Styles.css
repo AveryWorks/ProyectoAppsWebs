@@ -6,7 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin-top: 0;
   background-image: url(../images/Fondo1.png);
-  color: #edf2fa;
+  color: #202020;
 }
 
 .container {
@@ -355,7 +355,7 @@ body {
   margin: auto;
   border-radius: 4px;
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: rgb(0, 0, 0);
   box-shadow: 7px 13px 37px #7ca3ff;
 }
 

@@ -26,15 +26,16 @@
             </div>
             <div class="buttons">
                 <ul class="buttons__nav">
-                    <li class="btn__nav">
-                        <a href="store.html" class="btn">Tienda</a>
+                    <li class="btn__nav" style="background-color: #d7e3fc;">
+                        <a href="store.php" class="btn" style="color: #7ca3ff" >Tienda</a>
                     </li>
                     <li class="btn__nav">
-                        <a href="nosotros.html" class="btn">Nosotros</a>
+                        <a href="nosotros.php" class="btn">Nosotros</a>
                     </li>
                     <li class="btn__nav">
-                        <a href="contact.html" class="btn">Contacto</a>
+                        <a href="contact.php" class="btn">Contacto</a>
                     </li>
+                    
                 </ul>
             </div>
 

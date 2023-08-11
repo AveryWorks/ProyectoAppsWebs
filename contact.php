@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery-Floristeria</title>
+    <title>Floristeria</title>
     <link rel="stylesheet" href="./css/Styles.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
@@ -24,14 +24,14 @@
 
             <div class="buttons">
                 <ul class="buttons__nav">
-                    <li class="btn__nav">
-                        <a href="#" class="btn">Tienda</a>
+                    <li class="btn__nav" style="background-color: #d7e3fc;">
+                        <a href="store.php" class="btn" style="color: #7ca3ff" >Tienda</a>
                     </li>
                     <li class="btn__nav">
-                        <a href="#" class="btn">Nosotros</a>
+                        <a href="nosotros.php" class="btn">Nosotros</a>
                     </li>
                     <li class="btn__nav">
-                        <a href="#" class="btn">Contacto</a>
+                        <a href="contact.php" class="btn">Contacto</a>
                     </li>
                     
                 </ul>
@@ -39,27 +39,39 @@
 
         </nav>
     </header>
-    <section class="delivery">
-        <h4>Dirección de entrega</h4>
-        <input class="controls-delivery" type="text" name="direccion-delivery" id="correo" placeholder="Dirección exacta">
 
-        <h4>Método de pago</h4>
-        <label class="controls-delivery">
-            <input type="radio" name="opcion" value="opcion1">   Sinpe   
-        </label>
-        <br><br>
-        <label class="controls-delivery">
-            <input type="radio" name="opcion" value="opcion2"> Tarjeta 
-        </label>
-        <br><br>
-        <label class="controls-delivery">
-            <input type="radio" name="opcion" value="opcion3"> Efectivo
-        </label>
-        <br>
-        <br>
-        <input class="botons-delivery" type="submit" value="Realizar pedido">
+    <section class="form-backgroud">
 
-      </section>
+        <div class="contact__main">
+
+            <div class="resume__about">
+                <p class="resume__text"><i class="fas fa-phone"></i>      (+506)6363-4905</p>
+            </div>
+
+            <div class="resume__about">
+                <p class="resume__text"><i class="fas fa-envelope"></i>     www.xyz.com</p>
+            </div>
+
+            <div class="resume__about">
+                <p class="resume__text"><i class="fas fa-globe" aria-hidden="true"></i>     www.floristeria.com</p>
+            </div>
+
+            <div class="resume__about">
+                <a href="https://goo.gl/maps/mL32zzT5j5HboFiy5" style="color: #7ca3ff;">
+                    <p class="resume__text" style="text-decoration: none;"><i class="fa fa-map-marker" aria-hidden="true"></i>     50 metros este de Escuela Mercedes Norte, Puriscal, San José.</p>
+                </a>
+                
+            </div>
+            
+        </div>
+
+        <div class="contact__pics">
+            <img src="./images/img4.jpg">
+            
+        </div>
+
+    </section>
+
 
     <footer class="hero__down">
 
