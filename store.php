@@ -1,19 +1,42 @@
+<?php
+try {
+$host = 'bl5kioqvakcwe5ondzsl-mysql.services.clever-cloud.com';
+$user = 'uxedxshandegzmdk';
+$pass = 'ZaEy1j1xwsmA4Im2Q3gx';
+$db = 'bl5kioqvakcwe5ondzsl';
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if($conn->connect_error){
+    throw new Exception("Conexión fallida: " . $conn->connect_error);
+}
+
+$consulta = "SELECT * FROM flores";
+$resultado = $conn->query($consulta);
+
+if (!$resultado) {
+    throw new Exception("Error al obtener los productos: " . $conn->error);
+}
+
+} catch(Exception $e) {
+die("Error: " . $e->getMessage());
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Floristeria</title>
-  <link rel="stylesheet" type="text/css" href="css/storestyle.css">
-  <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/estilo.css">
-  <script src="javascript/app.js" async></script>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Floristeria</title>
+        <link rel="stylesheet" type="text/css" href="css/storestyle.css">
+        <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="javascript/app.js" async></script>
 </head>
 <body>
-    <header class="hero">
+        <header class="hero">
 
         <nav class="nav container">
             <div class="logo__nav">
@@ -42,84 +65,27 @@
     </header>
     
     <main>
-        
         <section class="contenedor">
             <!-- Contenedor de elementos -->
             <div class="contenedor-items">
-                <div class="item">
-                    <span class="titulo-item">Lavanda</span>
-                    <img src="images/storeImages/lavanda.png" alt="" class="img-item">
-                    <span class="precio-item">$15.000</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Rosa</span>
-                    <img src="images/storeImages/rosa.png" alt="" class="img-item">
-                    <span class="precio-item">$25.000</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Orquídea</span>
-                    <img src="images/storeImages/orquidea.png" alt="" class="img-item">
-                    <span class="precio-item">$35.000</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Suculenta</span>
-                    <img src="images/storeImages/suculenta.jpg" alt="" class="img-item">
-                    <span class="precio-item">$18.000</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Helecho</span>
-                    <img src="images/storeImages/helecho.jpg" alt="" class="img-item">
-                    <span class="precio-item">$32.000</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Bromelia</span>
-                    <img src="images/storeImages/bromelia.jpg" alt="" class="img-item">
-                    <span class="precio-item">$18.000</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Cactus</span>
-                    <img src="images/storeImages/cactus.jpg" alt="" class="img-item">
-                    <span class="precio-item">$54.000</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Tulipán</span>
-                    <img src="images/storeImages/tulipan.jpg" alt="" class="img-item">
-                    <span class="precio-item">$32.000</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Lirio</span>
-                    <img src="images/storeImages/lirio.png" alt="" class="img-item">
-                    <span class="precio-item">$42.800</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Begonia</span>
-                    <img src="images/storeImages/begonia.png" alt="" class="img-item">
-                    <span class="precio-item">$42.800</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Geranio</span>
-                    <img src="images/storeImages/geranio.jpg" alt="" class="img-item">
-                    <span class="precio-item">$42.800</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
-                <div class="item">
-                    <span class="titulo-item">Hortensia</span>
-                    <img src="images/storeImages/hortensia.jpg" alt="" class="img-item">
-                    <span class="precio-item">$42.800</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                </div>
+            <?php
+                if ($resultado->num_rows > 0) {
+                    while($producto = $resultado->fetch_assoc()) {
+                ?>
+                        <div class="item">
+                            <span class="titulo-item"><?php echo $producto['nombre']; ?></span>
+                            <img src="<?php echo $producto['imagen']; ?>" alt="<?php echo $producto['nombre']; ?>" class="img-item">
+                            <span class="precio-item">$<?php echo number_format($producto['precio'], 2); ?></span>
+                            <button class="boton-item">Agregar al Carrito</button>
+                        </div>
+                <?php
+                    }
+                } else {
+                    echo "<p>No hay productos disponibles en este momento.</p>";
+                }
+                ?>
             </div>
-            <!-- Carrito de Compras -->
+             <!-- Carrito de Compras -->
             <div class="carrito" id="carrito">
                 <div class="header-carrito">
                     <h2>Tu Carrito</h2>
@@ -170,10 +136,10 @@
                 </div>
             </div>
 
-    
+        </section>
     </main>
 
-<footer class="hero__down">
+   <footer class="hero__down">
 
     <section class="Footer container">
         <div class="Networks__icons">
@@ -200,6 +166,5 @@
     </section>
     
 </footer>
-
 </body>
 </html>
