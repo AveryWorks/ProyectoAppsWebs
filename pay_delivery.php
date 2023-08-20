@@ -1,4 +1,5 @@
 <?php
+
 // Verifica si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Conexión a la base de datos (ajusta los valores según tu configuración)
@@ -12,6 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->connect_error) {
         die("Conexión fallida: " . $conn->connect_error);
     }
+
+
+
+
 
     // Recupera los valores del formulario
     $nombreCompleto = $_POST["nombre-completo"];
@@ -100,7 +105,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="radio" name="opcion" value="opcion3"> Efectivo
             </label>
             <br><br>
-            <input class="botons-delivery" type="submit" value="Realizar pedido">
+            <?php
+                // Incluir el archivo de conexión
+                include 'conexion.php';
+
+                // Consultar el penúltimo dato
+                $sql = "SELECT total_amount FROM total ORDER BY id DESC LIMIT 1 OFFSET 1";
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute();
+                $row = $stmt->fetch();
+
+                $penultimoTotal = $row['total_amount'];
+
+                ?>
+
+                <!-- Ahora, mostrar el dato en el div -->
+                <div>
+                    <label>Monto total: </label> 
+                    <?php echo number_format($penultimoTotal, 2); ?>
+                </div>
+
+       
+            <br><br>
+            <input class="botons-delivery" type="button" value="Realizar pedido" onclick="window.location.href='store.php'">
+
+            
         </form>
     </section>
     <footer class="hero__down">

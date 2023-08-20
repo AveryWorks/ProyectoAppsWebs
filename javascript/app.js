@@ -192,18 +192,33 @@ function actualizarTotalCarrito(){
     }
     total = Math.round(total * 100)/100;
 
+    
+    enviarTotal(total);
 
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
+    
 
 
     
    
 }
 
-
-
-
-
+function enviarTotal(total) {
+    fetch('guardarTotal.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `totalAmount=${total}`
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data); // Aquí puedes manejar la respuesta del servidor
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
 
 
 
