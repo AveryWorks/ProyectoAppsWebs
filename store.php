@@ -45,8 +45,9 @@
         
         <section class="contenedor">
             <!-- Contenedor de elementos -->
-            <div class="contenedor-items">
-                <div class="item">
+            <div class="contenedor-items" id="contenedor-items">
+                
+            <div class="item">
                     <span class="titulo-item">Lavanda</span>
                     <img src="images/storeImages/lavanda.png" alt="" class="img-item">
                     <span class="precio-item">$15.000</span>
@@ -87,6 +88,7 @@
                     <img src="images/storeImages/cactus.jpg" alt="" class="img-item">
                     <span class="precio-item">$54.000</span>
                     <button class="boton-item">Agregar al Carrito</button>
+                    
                 </div>
                 <div class="item">
                     <span class="titulo-item">Tulipán</span>
@@ -118,6 +120,8 @@
                     <span class="precio-item">$42.800</span>
                     <button class="boton-item">Agregar al Carrito</button>
                 </div>
+
+
             </div>
             <!-- Carrito de Compras -->
             <div class="carrito" id="carrito">

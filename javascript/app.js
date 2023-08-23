@@ -1,3 +1,4 @@
+
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 
@@ -7,6 +8,17 @@ if(document.readyState == 'loading'){
 }else{
     ready();
 }
+
+
+window.addEventListener("load", async()=>{
+
+
+
+
+
+})
+
+
 
 function ready(){
     
@@ -41,17 +53,23 @@ function ready(){
     //Agregamos funcionalidad al botón comprar
     document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
 }
+
+
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
    
     //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
+    console.log(carritoItems.value);
     while (carritoItems.hasChildNodes()){
         carritoItems.removeChild(carritoItems.firstChild)
     }
     actualizarTotalCarrito();
     ocultarCarrito();
 }
+
+
+
 //Funciòn que controla el boton clickeado de agregar al carrito
 function agregarAlCarritoClicked(event){
     var button = event.target;
@@ -183,7 +201,7 @@ function actualizarTotalCarrito(){
     for(var i=0; i< carritoItems.length;i++){
         var item = carritoItems[i];
         var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
-        //quitamos el simobolo peso y el punto de milesimos.
+        //quitamos el simbolo peso y el punto de milesimos.
         var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
         var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
         console.log(precio);
@@ -192,12 +210,8 @@ function actualizarTotalCarrito(){
     }
     total = Math.round(total * 100)/100;
 
-
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
-
-    
-   
 }
 
 

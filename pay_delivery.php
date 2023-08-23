@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Inserta los datos en la tabla Venta
     $sql = "INSERT INTO Venta (nom_usuario, email_usuario, tel_usuario, delivery, pay_method) VALUES ('$nombreCompleto', '$correoElectronico', '$telefono', '$direccion', '$metodoPago')";
+    
 
     if ($conn->query($sql) === TRUE) {
         echo "";
@@ -30,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $conn->close();
+
 }
 ?>
 
@@ -60,13 +62,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="buttons">
                 <ul class="buttons__nav">
                     <li class="btn__nav">
-                        <a href="#" class="btn">Tienda</a>
+                        <a href="store.php" class="btn">Tienda</a>
                     </li>
                     <li class="btn__nav">
-                        <a href="#" class="btn">Nosotros</a>
+                        <a href="nosotros.php" class="btn">Nosotros</a>
                     </li>
                     <li class="btn__nav">
-                        <a href="#" class="btn">Contacto</a>
+                        <a href="contact.php" class="btn">Contacto</a>
                     </li>
                     
                 </ul>
@@ -74,8 +76,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </nav>
     </header>
-
-
 
     <section class="delivery">
         <form class="delivery-form" action="pay_delivery.php" method="POST">

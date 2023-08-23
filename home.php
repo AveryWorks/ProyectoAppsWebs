@@ -26,8 +26,8 @@
             </div>
             <div class="buttons">
                 <ul class="buttons__nav">
-                    <li class="btn__nav" style="background-color: #d7e3fc;">
-                        <a href="store.php" class="btn" style="color: #7ca3ff" >Tienda</a>
+                    <li class="btn__nav">
+                        <a href="store.php" class="btn">Tienda</a>
                     </li>
                     <li class="btn__nav">
                         <a href="nosotros.php" class="btn">Nosotros</a>
