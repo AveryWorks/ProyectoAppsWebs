@@ -180,27 +180,21 @@ function actualizarTotalCarrito(){
     var carritoItems = carritoContenedor.getElementsByClassName('carrito-item');
     var total = 0;
     //recorremos cada elemento del carrito para actualizar el total
-    for(var i=0; i< carritoItems.length;i++){
+    for (var i = 0; i < carritoItems.length; i++) {
         var item = carritoItems[i];
         var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
-        //quitamos el simobolo peso y el punto de milesimos.
-        var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
+        // Quitamos el símbolo peso y convertimos el precio a número
+        var precio = parseFloat(precioElemento.innerText.replace('$', '').replace(',', ''));
         var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
-        console.log(precio);
         var cantidad = cantidadItem.value;
         total = total + (precio * cantidad);
     }
-    total = Math.round(total * 100)/100;
-
     
+    total = total.toFixed(2);
+
     enviarTotal(total);
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
-    
-
-
-    
-   
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$' + total.replace('.', '.');
 }
 
 function enviarTotal(total) {

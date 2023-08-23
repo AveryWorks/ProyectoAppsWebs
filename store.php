@@ -32,7 +32,9 @@ die("Error: " . $e->getMessage());
         <link rel="shortcut icon" href="./images/favicon.png" type="images/x-icon">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/tiendaestilo.css">
+        <link rel="stylesheet" href="css/storesyle.css">
+        
         <script src="javascript/app.js" async></script>
 </head>
 <body>
@@ -83,7 +85,7 @@ die("Error: " . $e->getMessage());
                 } else {
                     echo "<p>No hay productos disponibles en este momento.</p>";
                 }
-                ?>
+            ?>
             </div>
              <!-- Carrito de Compras -->
             <div class="carrito" id="carrito">

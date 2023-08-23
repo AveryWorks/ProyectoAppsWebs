@@ -17,6 +17,16 @@ body {
   overflow: hidden;
 }
 
+.TnxText{
+
+  color: #7ca3ff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 400px;
+  padding-left: 750px;
+
+}
+
 /* Nav */
 
 .hero {
@@ -509,3 +519,5 @@ body {
   width: 50px;
   vertical-align: middle;
 }
+
+

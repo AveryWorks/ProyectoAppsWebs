@@ -16,7 +16,7 @@
 
         <nav class="nav container">
             <div class="logo__nav">
-                <a href="./home.html">
+                <a href="./home.php">
                     <img src="images/favicon.png" class="logo__img" alt="Logo Floristeria">
                 </a>
                 <h2 class="title">Floristeria</h2>

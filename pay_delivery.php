@@ -1,8 +1,6 @@
 <?php
 
-// Verifica si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Conexión a la base de datos (ajusta los valores según tu configuración)
     $servername = "bl5kioqvakcwe5ondzsl-mysql.services.clever-cloud.com";
     $username = "uxedxshandegzmdk";
     $password = "ZaEy1j1xwsmA4Im2Q3gx";
@@ -14,22 +12,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Conexión fallida: " . $conn->connect_error);
     }
 
-
-
-
-
-    // Recupera los valores del formulario
     $nombreCompleto = $_POST["nombre-completo"];
     $correoElectronico = $_POST["correo-electronico"];
     $telefono = $_POST["telefono"];
     $direccion = $_POST["direccion-delivery"];
     $metodoPago = $_POST["opcion"];
 
-    // Inserta los datos en la tabla Venta
+
     $sql = "INSERT INTO Venta (nom_usuario, email_usuario, tel_usuario, delivery, pay_method) VALUES ('$nombreCompleto', '$correoElectronico', '$telefono', '$direccion', '$metodoPago')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "";
+
+        
+        header("Location: thx.php");
+        exit(); // Asegura que la ejecución se detenga aquí
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -83,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     <section class="delivery">
-        <form class="delivery-form" action="pay_delivery.php" method="POST">
+        <form class="delivery-form" action="" method="POST">
             <h4>Datos personales</h4>
             <input class="controls-delivery" type="text" name="nombre-completo" placeholder="Nombre Completo">
             <input class="controls-delivery" type="email" name="correo-electronico" placeholder="Correo Electrónico">
@@ -106,10 +102,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </label>
             <br><br>
             <?php
-                // Incluir el archivo de conexión
                 include 'conexion.php';
 
-                // Consultar el penúltimo dato
                 $sql = "SELECT total_amount FROM total ORDER BY id DESC LIMIT 1 OFFSET 1";
                 $stmt = $pdo->prepare($sql);
                 $stmt->execute();
@@ -119,7 +113,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 ?>
 
-                <!-- Ahora, mostrar el dato en el div -->
                 <div>
                     <label>Monto total: </label> 
                     <?php echo number_format($penultimoTotal, 2); ?>
@@ -127,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
        
             <br><br>
-            <input class="botons-delivery" type="button" value="Realizar pedido" onclick="window.location.href='store.php'">
+            <input class="botons-delivery" name="submit" type="submit" value="Realizar pedido" onclick="window.location.href='store.php'">
 
             
         </form>
